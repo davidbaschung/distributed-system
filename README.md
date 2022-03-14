@@ -1,6 +1,8 @@
 # distributed-system
 > A distributed P2P network downloading virtual data
 
+Group project where i managed the programming part
+
 <h3>What I learned</h3>
 
 <ul><li>Erlang, Haskell and functional languages usage</li></ul>
