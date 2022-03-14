@@ -1,0 +1,36 @@
+{scanShortestPaths} -> % scans the shortest path to every node of the network.
+      %io:format("Action : node ~p scans the shortest paths~n",[ID]),
+      %[Next ! {dist, self(), Weight} || {NextID, Weight} <- NeighboursIDAndCost],
+      %path_search({Pred, Num + length(Neighbours), D}, Neighbours, isStart),
+      %self() ! {findShortestPath, {0,0,0}, true},
+      NewFiles = Files;
+    {findShortestPath, {PredID, Num, D}, IsStart} -> % Calculates the shortest paths to a new Node.
+      %Tracker ! {getCurrentNetwork, self()},
+      %receive {currentNetwork, Network } ->
+      %  0
+      %end,
+      %receive  
+        %% Phase I
+      %  start_path_search ->
+      %    [io:format("Next Node ID : ~p~n",NextID) || NextID <- NeighboursID]
+          %Next = lists:nth(NextID, CurrentNetwork),
+          %Next ! {dist, self(), Weight},
+          %path_search({Pred, Num + length(Neighbours), D}, Neighbours, IsStart)
+      %end,
+      NewFiles = Files;
+    {removePath, Node} -> % Removes the path to an old neighbour
+      0, %TODO,
+      NewFiles = Files;
+	  
+	  
+	  
+	  
+	  
+	  
+	  Activity :
+	  
+	  
+	  
+
+  io:format("~nActivity : node 3 scans and informs us of the shortest paths for future downloads~n"),
+  Node3 ! {scanShortestPaths}.
