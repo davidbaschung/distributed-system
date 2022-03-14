@@ -1,5 +1,5 @@
 # distributed-system
-> A distributed P2P network
+> A distributed P2P network downloading virtual data
 
 <h3>What I learned</h3>
 
